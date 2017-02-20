@@ -31,6 +31,8 @@ int leftNegative = 13;
 int rightPositive = 11;
 int rightNegative = 10;
 
+int forOneSecond = 1000;
+
 void setup() {
   pinMode(leftPositive, OUTPUT);   
   pinMode(leftNegative, OUTPUT);
@@ -97,7 +99,11 @@ void moveStop() {
 
 void loop() {
   moveForward();
-  delay(5000);
+  delay(forOneSecond);
   moveBackward();
-  delay(5000);
+  delay(forOneSecond);
+  turnLeft();
+  delay(forOneSecond);
+  turnRight();
+  delay(forOneSecond);
 }
