@@ -81,12 +81,12 @@ void moveBackward() {
   switchLeftBackward();
 }
 
-void turnRight() {
+void turnLeft() {
   switchRightForward();
   switchLeftBackward();
 }
 
-void turnLeft() {
+void turnRight() {
   switchLeftForward();
   switchRightBackward();
 }
